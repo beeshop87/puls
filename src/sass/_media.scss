@@ -1,0 +1,125 @@
+@media(max-width: 991px) {
+    .container {
+        padding: 0 20px 0 20px;
+    }
+    .promo {
+        background: url(../img/main.jpg) right (center/cover) no-repeat;
+        padding-bottom: 70px;
+    }
+    .promo__wrapper {
+        margin-top: 70px;
+    }
+
+    .advantages__card {
+        margin-right: 30px;
+            &:nth-child(3) {
+                margin-right: 0;
+            }
+    }
+}
+            
+@media (max-width: 767px) {
+    .promo {
+        padding: 30px 30px 70px 30px;
+        &__wrapper {
+            justify-content: space-between;
+            align-items:center;
+        }
+        &__header {
+            font-size: 30px;
+        }
+        &__subheader {
+            font-size: 20px; 
+        }
+    }
+    .header {
+        &__contacts {
+            &_visible {
+                display: none;
+            }
+            &_hidden {
+                margin-top: 25px;
+                display: flex;
+            }
+        }
+    }
+    
+    
+    .advantages__wrapper {
+        display: block;
+        margin: 0 auto;
+    }
+    .advantages__card {
+        display: block;
+        margin: 0 auto;
+        margin-top: 40px;
+        align-items: center;
+            &:nth-child(3) {
+                margin: 40px auto;
+        }
+    }
+    .advantages__ico {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 575px) {
+    .header {
+        display: block;
+        &__logo {
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+        }
+        &__official {
+            margin-top: 25px;
+        }
+        &__contacts_hidden {
+            width: 165px;
+            display: block;
+            margin: 20px auto;
+        }
+        &__phone {
+            font-size: 17px;
+        }
+    }
+    .container {
+        padding: 0 10px;
+    }
+    .promo {
+        padding: 20px 20px 40px 20px;
+        &__wrapper {
+            margin-top: 40px;
+        }
+        &__header {
+            font-size: 18px;
+            text-align: center;
+        }
+        &__subheader {
+            font-size: 14px;
+            text-align: center;
+            margin-top: 5px;
+        }
+        &__icons {
+            width: 100%;
+            margin-top: 40px;
+        }
+        &__icon {
+            width: 25%;
+            font-size: 12px;
+            img {
+                width: 30px;
+            }
+        }
+        &__link {
+            font-size: 12px;
+        }
+        .button_main {
+            width: 250px;
+            height: 40px;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+    }
+}
